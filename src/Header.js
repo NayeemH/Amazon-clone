@@ -3,17 +3,14 @@ import './Header.css';
 import { Link } from 'react-router-dom';
 import SearchIcon from '@material-ui/icons/Search';
 import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
+import logo from './logo2.png'; // with import
 
 function Header() {
   return (
     <nav className='header'>
       {/* logo on the left */}
       <Link to='/'>
-        <img
-          className='header__logo'
-          src='https://pngimg.com/uploads/amazon/amazon_PNG25.png'
-          alt='logo'
-        ></img>
+        <img className='header__logo' src={logo} alt='logo'></img>
       </Link>
 
       {/* Search box */}
