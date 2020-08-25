@@ -38,12 +38,13 @@ function Checkout() {
           </div>
         )}
       </div>
-      {basket.length > 0 && (
-        <div className='checkout__right'>
-          <h1>Subtotal</h1>
-          <Subtotal />
-        </div>
-      )}
+      <div className='checkout__right'>
+        {basket.length > 0 && (
+          <div className='checkout__right'>
+            <Subtotal />
+          </div>
+        )}
+      </div>
     </div>
   );
 }

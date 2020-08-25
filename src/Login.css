@@ -27,6 +27,7 @@
 }
 .login__container > p {
   margin-top: 15px;
+  font-size: 12px;
 }
 
 .login__logo {
@@ -34,4 +35,21 @@
   margin-bottom: 20px;
   width: 100px;
   object-fit: contain;
+}
+.login__signInButton {
+  background-color: #f0c14b;
+  border: 1 px solid;
+  border-color: #a88734 #9c7e31 #846a29;
+  border-radius: 2px;
+  height: 30px;
+  margin-top: 10px;
+  width: 100%;
+}
+.login__registerButton {
+  border: 1 px solid;
+  border-color: darkgray;
+  border-radius: 2px;
+  height: 30px;
+  margin-top: 10px;
+  width: 100%;
 }
