@@ -4,8 +4,11 @@ import { Link } from 'react-router-dom';
 import SearchIcon from '@material-ui/icons/Search';
 import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
 import logo from './logo2.png'; // with import
+import { useStateValue } from './StateProvider';
 
 function Header() {
+  const [{ basket }] = useStateValue();
+
   return (
     <nav className='header'>
       {/* logo on the left */}
@@ -54,7 +57,9 @@ function Header() {
             <ShoppingBasketIcon />
 
             {/* number of items in busket */}
-            <span className='header__optionLineTwo header__basketCount'>0</span>
+            <span className='header__optionLineTwo header__basketCount'>
+              {basket?.length}
+            </span>
           </div>
         </Link>
       </div>
